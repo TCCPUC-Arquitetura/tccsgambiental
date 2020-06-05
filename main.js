@@ -351,6 +351,32 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/views/test/test.component.html":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/views/test/test.component.html ***!
+  \**************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<p>test works!</p>\r\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/views/zona-mineracao/zona-mineracao.component.html":
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/views/zona-mineracao/zona-mineracao.component.html ***!
+  \**********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<p>zona-mineracao works!</p>\r\n");
+
+/***/ }),
+
 /***/ "./node_modules/tslib/tslib.es6.js":
 /*!*****************************************!*\
   !*** ./node_modules/tslib/tslib.es6.js ***!
@@ -667,18 +693,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ngx-perfect-scrollbar */ "./node_modules/ngx-perfect-scrollbar/dist/ngx-perfect-scrollbar.es5.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/fesm5/agm-core.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _containers__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./containers */ "./src/app/containers/index.ts");
-/* harmony import */ var _views_error_404_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./views/error/404.component */ "./src/app/views/error/404.component.ts");
-/* harmony import */ var _views_error_500_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./views/error/500.component */ "./src/app/views/error/500.component.ts");
-/* harmony import */ var _views_login_login_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./views/login/login.component */ "./src/app/views/login/login.component.ts");
-/* harmony import */ var _views_register_register_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./views/register/register.component */ "./src/app/views/register/register.component.ts");
-/* harmony import */ var _coreui_angular__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @coreui/angular */ "./node_modules/@coreui/angular/fesm5/coreui-angular.js");
-/* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./app.routing */ "./src/app/app.routing.ts");
-/* harmony import */ var ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ngx-bootstrap/dropdown */ "./node_modules/ngx-bootstrap/dropdown/fesm5/ngx-bootstrap-dropdown.js");
-/* harmony import */ var ngx_bootstrap_tabs__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ngx-bootstrap/tabs */ "./node_modules/ngx-bootstrap/tabs/fesm5/ngx-bootstrap-tabs.js");
-/* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ng2-charts */ "./node_modules/ng2-charts/fesm5/ng2-charts.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _containers__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./containers */ "./src/app/containers/index.ts");
+/* harmony import */ var _views_error_404_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./views/error/404.component */ "./src/app/views/error/404.component.ts");
+/* harmony import */ var _views_error_500_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./views/error/500.component */ "./src/app/views/error/500.component.ts");
+/* harmony import */ var _views_login_login_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./views/login/login.component */ "./src/app/views/login/login.component.ts");
+/* harmony import */ var _views_register_register_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./views/register/register.component */ "./src/app/views/register/register.component.ts");
+/* harmony import */ var _coreui_angular__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @coreui/angular */ "./node_modules/@coreui/angular/fesm5/coreui-angular.js");
+/* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./app.routing */ "./src/app/app.routing.ts");
+/* harmony import */ var ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ngx-bootstrap/dropdown */ "./node_modules/ngx-bootstrap/dropdown/fesm5/ngx-bootstrap-dropdown.js");
+/* harmony import */ var ngx_bootstrap_tabs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ngx-bootstrap/tabs */ "./node_modules/ngx-bootstrap/tabs/fesm5/ngx-bootstrap-tabs.js");
+/* harmony import */ var ng2_charts__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ng2-charts */ "./node_modules/ng2-charts/fesm5/ng2-charts.js");
+/* harmony import */ var _views_zona_mineracao_zona_mineracao_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./views/zona-mineracao/zona-mineracao.component */ "./src/app/views/zona-mineracao/zona-mineracao.component.ts");
+/* harmony import */ var _views_test_test_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./views/test/test.component */ "./src/app/views/test/test.component.ts");
 
 
 
@@ -690,8 +717,6 @@ __webpack_require__.r(__webpack_exports__);
 var DEFAULT_PERFECT_SCROLLBAR_CONFIG = {
     suppressScrollX: true
 };
-//map api
-
 
 // Import containers
 
@@ -699,11 +724,13 @@ var DEFAULT_PERFECT_SCROLLBAR_CONFIG = {
 
 
 
-var APP_CONTAINERS = [_containers__WEBPACK_IMPORTED_MODULE_10__["DefaultLayoutComponent"]];
+var APP_CONTAINERS = [_containers__WEBPACK_IMPORTED_MODULE_9__["DefaultLayoutComponent"]];
 
 // Import routing module
 
 // Import 3rd party components
+
+
 
 
 
@@ -715,29 +742,28 @@ var AppModule = /** @class */ (function () {
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
-                _app_routing__WEBPACK_IMPORTED_MODULE_16__["AppRoutingModule"],
-                _coreui_angular__WEBPACK_IMPORTED_MODULE_15__["AppAsideModule"],
-                _coreui_angular__WEBPACK_IMPORTED_MODULE_15__["AppBreadcrumbModule"].forRoot(),
-                _coreui_angular__WEBPACK_IMPORTED_MODULE_15__["AppFooterModule"],
-                _coreui_angular__WEBPACK_IMPORTED_MODULE_15__["AppHeaderModule"],
-                _coreui_angular__WEBPACK_IMPORTED_MODULE_15__["AppSidebarModule"],
+                _app_routing__WEBPACK_IMPORTED_MODULE_15__["AppRoutingModule"],
+                _coreui_angular__WEBPACK_IMPORTED_MODULE_14__["AppAsideModule"],
+                _coreui_angular__WEBPACK_IMPORTED_MODULE_14__["AppBreadcrumbModule"].forRoot(),
+                _coreui_angular__WEBPACK_IMPORTED_MODULE_14__["AppFooterModule"],
+                _coreui_angular__WEBPACK_IMPORTED_MODULE_14__["AppHeaderModule"],
+                _coreui_angular__WEBPACK_IMPORTED_MODULE_14__["AppSidebarModule"],
                 ngx_perfect_scrollbar__WEBPACK_IMPORTED_MODULE_5__["PerfectScrollbarModule"],
-                ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_17__["BsDropdownModule"].forRoot(),
-                ngx_bootstrap_tabs__WEBPACK_IMPORTED_MODULE_18__["TabsModule"].forRoot(),
-                ng2_charts__WEBPACK_IMPORTED_MODULE_19__["ChartsModule"],
+                ngx_bootstrap_dropdown__WEBPACK_IMPORTED_MODULE_16__["BsDropdownModule"].forRoot(),
+                ngx_bootstrap_tabs__WEBPACK_IMPORTED_MODULE_17__["TabsModule"].forRoot(),
+                ng2_charts__WEBPACK_IMPORTED_MODULE_18__["ChartsModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_6__["ReactiveFormsModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"],
-                _agm_core__WEBPACK_IMPORTED_MODULE_8__["AgmCoreModule"].forRoot({
-                    apiKey: 'AIzaSyA_GRu2pdnNTC6gRBBs1NT9OIp7gNXt800'
-                })
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_7__["HttpClientModule"]
             ],
             declarations: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__spreadArrays"])([
-                _app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]
             ], APP_CONTAINERS, [
-                _views_error_404_component__WEBPACK_IMPORTED_MODULE_11__["P404Component"],
-                _views_error_500_component__WEBPACK_IMPORTED_MODULE_12__["P500Component"],
-                _views_login_login_component__WEBPACK_IMPORTED_MODULE_13__["LoginComponent"],
-                _views_register_register_component__WEBPACK_IMPORTED_MODULE_14__["RegisterComponent"],
+                _views_error_404_component__WEBPACK_IMPORTED_MODULE_10__["P404Component"],
+                _views_error_500_component__WEBPACK_IMPORTED_MODULE_11__["P500Component"],
+                _views_login_login_component__WEBPACK_IMPORTED_MODULE_12__["LoginComponent"],
+                _views_register_register_component__WEBPACK_IMPORTED_MODULE_13__["RegisterComponent"],
+                _views_zona_mineracao_zona_mineracao_component__WEBPACK_IMPORTED_MODULE_19__["ZonaMineracaoComponent"],
+                _views_test_test_component__WEBPACK_IMPORTED_MODULE_20__["TestComponent"]
             ]),
             providers: [
                 {
@@ -745,7 +771,7 @@ var AppModule = /** @class */ (function () {
                     useClass: _angular_common__WEBPACK_IMPORTED_MODULE_3__["HashLocationStrategy"]
                 }
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -827,7 +853,7 @@ var routes = [
             {
                 path: "base",
                 loadChildren: function () {
-                    return Promise.all(/*! import() | views-base-base-module */[__webpack_require__.e("default~views-base-base-module~views-company-assets-company-assets-module~views-notifications-notifi~bf7d321a"), __webpack_require__.e("default~views-base-base-module~views-company-assets-company-assets-module"), __webpack_require__.e("default~views-base-base-module~views-dashboard-dashboard-module"), __webpack_require__.e("common"), __webpack_require__.e("views-base-base-module")]).then(__webpack_require__.bind(null, /*! ./views/base/base.module */ "./src/app/views/base/base.module.ts")).then(function (m) { return m.BaseModule; });
+                    return Promise.all(/*! import() | views-base-base-module */[__webpack_require__.e("default~views-base-base-module~views-notifications-notifications-module"), __webpack_require__.e("default~views-base-base-module~views-dashboard-dashboard-module"), __webpack_require__.e("views-base-base-module")]).then(__webpack_require__.bind(null, /*! ./views/base/base.module */ "./src/app/views/base/base.module.ts")).then(function (m) { return m.BaseModule; });
                 }
             },
             {
@@ -857,7 +883,7 @@ var routes = [
             {
                 path: "notifications",
                 loadChildren: function () {
-                    return Promise.all(/*! import() | views-notifications-notifications-module */[__webpack_require__.e("default~views-base-base-module~views-company-assets-company-assets-module~views-notifications-notifi~bf7d321a"), __webpack_require__.e("common"), __webpack_require__.e("views-notifications-notifications-module")]).then(__webpack_require__.bind(null, /*! ./views/notifications/notifications.module */ "./src/app/views/notifications/notifications.module.ts")).then(function (m) { return m.NotificationsModule; });
+                    return Promise.all(/*! import() | views-notifications-notifications-module */[__webpack_require__.e("default~views-base-base-module~views-notifications-notifications-module"), __webpack_require__.e("views-notifications-notifications-module")]).then(__webpack_require__.bind(null, /*! ./views/notifications/notifications.module */ "./src/app/views/notifications/notifications.module.ts")).then(function (m) { return m.NotificationsModule; });
                 }
             },
             {
@@ -870,12 +896,6 @@ var routes = [
                 path: "widgets",
                 loadChildren: function () {
                     return Promise.all(/*! import() | views-widgets-widgets-module */[__webpack_require__.e("default~views-dashboard-dashboard-module~views-theme-theme-module~views-widgets-widgets-module"), __webpack_require__.e("common"), __webpack_require__.e("views-widgets-widgets-module")]).then(__webpack_require__.bind(null, /*! ./views/widgets/widgets.module */ "./src/app/views/widgets/widgets.module.ts")).then(function (m) { return m.WidgetsModule; });
-                }
-            },
-            {
-                path: "company-assets",
-                loadChildren: function () {
-                    return Promise.all(/*! import() | views-company-assets-company-assets-module */[__webpack_require__.e("default~views-base-base-module~views-company-assets-company-assets-module~views-notifications-notifi~bf7d321a"), __webpack_require__.e("default~views-base-base-module~views-company-assets-company-assets-module"), __webpack_require__.e("views-company-assets-company-assets-module")]).then(__webpack_require__.bind(null, /*! ./views/company-assets/company-assets.module */ "./src/app/views/company-assets/company-assets.module.ts")).then(function (m) { return m.CompanyAssetsModule; });
                 }
             }
         ]
@@ -992,13 +1012,42 @@ var navItems = [
     },
     {
         name: "Zona de Mineração",
-        url: "/company-assets/mining-zone",
-        icon: "icon-puzzle"
+        url: "/base",
+        icon: "icon-puzzle",
+        children: [
+            {
+                name: "Incluir",
+                url: "/base/forms",
+                icon: "icon-puzzle"
+            },
+            {
+                name: "Pesquisar",
+                url: "/base/carousels",
+                icon: "icon-puzzle"
+            },
+            {
+                name: "Test",
+                url: "/base/dam-create",
+                icon: "icon-puzzle"
+            }
+        ]
     },
     {
         name: "Barragens",
         url: "/buttons",
-        icon: "icon-cursor"
+        icon: "icon-cursor",
+        children: [
+            {
+                name: "Incluir",
+                url: "/buttons/buttons",
+                icon: "icon-cursor"
+            },
+            {
+                name: "Pesquisar",
+                url: "/buttons/dropdowns",
+                icon: "icon-cursor"
+            }
+        ]
     },
     {
         name: "Equipamentos",
@@ -1163,6 +1212,99 @@ var RegisterComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/views/test/test.component.css":
+/*!***********************************************!*\
+  !*** ./src/app/views/test/test.component.css ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3ZpZXdzL3Rlc3QvdGVzdC5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/views/test/test.component.ts":
+/*!**********************************************!*\
+  !*** ./src/app/views/test/test.component.ts ***!
+  \**********************************************/
+/*! exports provided: TestComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TestComponent", function() { return TestComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var TestComponent = /** @class */ (function () {
+    function TestComponent() {
+    }
+    TestComponent.prototype.ngOnInit = function () {
+    };
+    TestComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-test',
+            template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! raw-loader!./test.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/views/test/test.component.html")).default,
+            styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! ./test.component.css */ "./src/app/views/test/test.component.css")).default]
+        }),
+        Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [])
+    ], TestComponent);
+    return TestComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/views/zona-mineracao/zona-mineracao.component.css":
+/*!*******************************************************************!*\
+  !*** ./src/app/views/zona-mineracao/zona-mineracao.component.css ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3ZpZXdzL3pvbmEtbWluZXJhY2FvL3pvbmEtbWluZXJhY2FvLmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/views/zona-mineracao/zona-mineracao.component.ts":
+/*!******************************************************************!*\
+  !*** ./src/app/views/zona-mineracao/zona-mineracao.component.ts ***!
+  \******************************************************************/
+/*! exports provided: ZonaMineracaoComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ZonaMineracaoComponent", function() { return ZonaMineracaoComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var ZonaMineracaoComponent = /** @class */ (function () {
+    function ZonaMineracaoComponent() {
+    }
+    ZonaMineracaoComponent.prototype.ngOnInit = function () { };
+    ZonaMineracaoComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: "app-zona-mineracao",
+            template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! raw-loader!./zona-mineracao.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/views/zona-mineracao/zona-mineracao.component.html")).default,
+            styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! ./zona-mineracao.component.css */ "./src/app/views/zona-mineracao/zona-mineracao.component.css")).default]
+        }),
+        Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [])
+    ], ZonaMineracaoComponent);
+    return ZonaMineracaoComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/environments/environment.ts":
 /*!*****************************************!*\
   !*** ./src/environments/environment.ts ***!
@@ -1225,7 +1367,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\TCC-Arquitetura\Tcc\Sgambiental\FrontEnd\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\TCC-Arquitetura\TCC_ATUALIZADO_ULTIMAVERSAO\sgambiental\FrontEnd\src\main.ts */"./src/main.ts");
 
 
 /***/ })
