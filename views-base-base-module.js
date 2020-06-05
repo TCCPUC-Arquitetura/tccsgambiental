@@ -22462,7 +22462,7 @@ var WeatherService = /** @class */ (function () {
         this.client = client;
     }
     WeatherService.prototype.getWeatherData = function () {
-        return this.client.get('http://apiadvisor.climatempo.com.br/api/v1/forecast/locale/8560/days/15?token=a08be75cfc6cb3cdbea2ea3e293752bb');
+        return this.client.get('https://apiadvisor.climatempo.com.br/api/v1/forecast/locale/8560/days/15?token=a08be75cfc6cb3cdbea2ea3e293752bb');
     };
     WeatherService.ctorParameters = function () { return [
         { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
