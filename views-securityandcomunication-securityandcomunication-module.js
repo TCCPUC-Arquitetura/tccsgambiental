@@ -26,6 +26,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/views/securityandcomunication/riskzone.component.html":
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/views/securityandcomunication/riskzone.component.html ***!
+  \*************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"animated fadeIn\">\r\n  \r\n    <div class=\"row\">\r\n      <div class=\"container-fluid\">\r\n       \r\n       <div class=\"table-responsive-sm\">\r\n        <table class=\"table table-bordered  table-striped table-light\">\r\n          <thead >\r\n            <tr>\r\n              <th scope=\"col\">Identificação</th>\r\n              <th scope=\"col\">Nome</th>\r\n              <th scope=\"col\">Latitude</th>\r\n              <th scope=\"col\">Longitude</th>\r\n\r\n            \r\n\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n            <tr  *ngFor=\"let riskZone of riskZoneList\">\r\n              <th scope=\"row\">{{riskZone.id}}</th>\r\n              <td>{{riskZone.name}}</td>\r\n              <td>{{riskZone.latitude}}</td>\r\n              <td>{{riskZone.longitude}}</td>\r\n\r\n         \r\n            </tr>\r\n         \r\n          </tbody>\r\n        </table>\r\n       </div>\r\n  \r\n  </div>\r\n  ");
+
+/***/ }),
+
 /***/ "./src/app/views/securityandcomunication/affected.component.css":
 /*!**********************************************************************!*\
   !*** ./src/app/views/securityandcomunication/affected.component.css ***!
@@ -228,6 +241,112 @@ var EvacuationplanService = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/views/securityandcomunication/riskzone.component.css":
+/*!**********************************************************************!*\
+  !*** ./src/app/views/securityandcomunication/riskzone.component.css ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJhcHAvdmlld3Mvc2VjdXJpdHlhbmRjb211bmljYXRpb24vcmlza3pvbmUuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/views/securityandcomunication/riskzone.component.ts":
+/*!*********************************************************************!*\
+  !*** ./src/app/views/securityandcomunication/riskzone.component.ts ***!
+  \*********************************************************************/
+/*! exports provided: RiskzoneComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RiskzoneComponent", function() { return RiskzoneComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _riskzone_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./riskzone.service */ "./src/app/views/securityandcomunication/riskzone.service.ts");
+
+
+
+var RiskzoneComponent = /** @class */ (function () {
+    function RiskzoneComponent(riskZoneService) {
+        this.riskZoneService = riskZoneService;
+    }
+    RiskzoneComponent.prototype.ngOnInit = function () {
+        this.getRiskZones();
+    };
+    RiskzoneComponent.prototype.getRiskZones = function () {
+        var _this = this;
+        this.riskZoneService.getRiskZoneList().subscribe(function (data) {
+            _this.riskZoneList = data;
+        });
+    };
+    RiskzoneComponent.ctorParameters = function () { return [
+        { type: _riskzone_service__WEBPACK_IMPORTED_MODULE_2__["RiskzoneService"] }
+    ]; };
+    RiskzoneComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-riskzone',
+            template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! raw-loader!./riskzone.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/views/securityandcomunication/riskzone.component.html")).default,
+            styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! ./riskzone.component.css */ "./src/app/views/securityandcomunication/riskzone.component.css")).default]
+        }),
+        Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [_riskzone_service__WEBPACK_IMPORTED_MODULE_2__["RiskzoneService"]])
+    ], RiskzoneComponent);
+    return RiskzoneComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/views/securityandcomunication/riskzone.service.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/views/securityandcomunication/riskzone.service.ts ***!
+  \*******************************************************************/
+/*! exports provided: RiskzoneService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RiskzoneService", function() { return RiskzoneService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+
+
+
+
+var RiskzoneService = /** @class */ (function () {
+    function RiskzoneService(client) {
+        this.client = client;
+        this.httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({ 'Content-Type': 'application/json' })
+        };
+    }
+    RiskzoneService.prototype.getRiskZoneList = function () {
+        return this.client.get('https://907e3d5e-47ba-4503-a394-6fe53c2615a9.mock.pstmn.io/apicomunicacao/zonaderisco', this.httpOptions).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (data) {
+            return data;
+        }));
+    };
+    RiskzoneService.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+    ]; };
+    RiskzoneService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], RiskzoneService);
+    return RiskzoneService;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/views/securityandcomunication/securityandcomunication-routing.module.ts":
 /*!*****************************************************************************************!*\
   !*** ./src/app/views/securityandcomunication/securityandcomunication-routing.module.ts ***!
@@ -243,6 +362,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _affected_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./affected.component */ "./src/app/views/securityandcomunication/affected.component.ts");
 /* harmony import */ var _evacuationplan_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./evacuationplan.component */ "./src/app/views/securityandcomunication/evacuationplan.component.ts");
+/* harmony import */ var _riskzone_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./riskzone.component */ "./src/app/views/securityandcomunication/riskzone.component.ts");
+
 
 
 
@@ -273,6 +394,13 @@ var routes = [
                     title: 'Planos de Evacução'
                 }
             },
+            {
+                path: 'riskzone',
+                component: _riskzone_component__WEBPACK_IMPORTED_MODULE_5__["RiskzoneComponent"],
+                data: {
+                    title: 'Zona de Risco'
+                }
+            }
         ]
     }
 ];
@@ -308,6 +436,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _affected_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./affected.component */ "./src/app/views/securityandcomunication/affected.component.ts");
 /* harmony import */ var _securityandcomunication_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./securityandcomunication-routing.module */ "./src/app/views/securityandcomunication/securityandcomunication-routing.module.ts");
 /* harmony import */ var _evacuationplan_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./evacuationplan.component */ "./src/app/views/securityandcomunication/evacuationplan.component.ts");
+/* harmony import */ var _riskzone_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./riskzone.component */ "./src/app/views/securityandcomunication/riskzone.component.ts");
+
 
 
 
@@ -319,7 +449,7 @@ var SecurityandcomunicationModule = /** @class */ (function () {
     }
     SecurityandcomunicationModule = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-            declarations: [_affected_component__WEBPACK_IMPORTED_MODULE_3__["AffectedComponent"], _evacuationplan_component__WEBPACK_IMPORTED_MODULE_5__["EvacuationplanComponent"]],
+            declarations: [_affected_component__WEBPACK_IMPORTED_MODULE_3__["AffectedComponent"], _evacuationplan_component__WEBPACK_IMPORTED_MODULE_5__["EvacuationplanComponent"], _riskzone_component__WEBPACK_IMPORTED_MODULE_6__["RiskzoneComponent"]],
             imports: [
                 _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
                 _securityandcomunication_routing_module__WEBPACK_IMPORTED_MODULE_4__["SecurityandcomunicationRoutingModule"]

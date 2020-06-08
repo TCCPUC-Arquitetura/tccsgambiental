@@ -1267,6 +1267,11 @@ var navItems = [
         icon: "icon-puzzle"
     },
     {
+        name: "Zona de Risco",
+        url: "/securityandcomunication/riskzone",
+        icon: "icon-puzzle"
+    },
+    {
         title: true,
         name: "Monitoramento de Barragens"
     },
