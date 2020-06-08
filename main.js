@@ -334,7 +334,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"col-md-6 offset-md-3 mt-5\">\r\n   \r\n    <div class=\"card\">\r\n        <h4 class=\"card-header\">SGA</h4>\r\n        <div class=\"card-body\">\r\n            <form [formGroup]=\"loginForm\" (ngSubmit)=\"onSubmit()\">\r\n                <div class=\"form-group\">\r\n                    <label for=\"username\">Usuário</label>\r\n                    <input type=\"text\" formControlName=\"username\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.username.errors }\" />\r\n                    <div *ngIf=\"submitted && f.username.errors\" class=\"invalid-feedback\">\r\n                        <div *ngIf=\"f.username.errors.required\">Username is required</div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <label for=\"password\">Senha</label>\r\n                    <input type=\"password\" formControlName=\"password\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.password.errors }\" />\r\n                    <div *ngIf=\"submitted && f.password.errors\" class=\"invalid-feedback\">\r\n                        <div *ngIf=\"f.password.errors.required\">Password is required</div>\r\n                    </div>\r\n                </div>\r\n                <button [disabled]=\"loading\" class=\"btn btn-primary\">\r\n                    <span *ngIf=\"loading\" class=\"spinner-border spinner-border-sm mr-1\"></span>\r\n                    Login\r\n                </button>\r\n                <div *ngIf=\"error\" class=\"alert alert-danger mt-3 mb-0\">{{error.message}}</div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"col-md-6 offset-md-3 mt-5\">\r\n   \r\n    <div class=\"card\">\r\n        <h4 class=\"card-header\">SGA</h4>\r\n        <div class=\"card-body\">\r\n            <form [formGroup]=\"loginForm\" (ngSubmit)=\"onSubmit()\">\r\n                <div class=\"form-group\">\r\n                    <label for=\"username\">Usuário</label>\r\n                    <input type=\"text\" formControlName=\"username\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.username.errors }\" />\r\n                    <div *ngIf=\"submitted && f.username.errors\" class=\"invalid-feedback\">\r\n                        <div *ngIf=\"f.username.errors.required\">Usuário é obrigatório</div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <label for=\"password\">Senha</label>\r\n                    <input type=\"password\" formControlName=\"password\" class=\"form-control\" [ngClass]=\"{ 'is-invalid': submitted && f.password.errors }\" />\r\n                    <div *ngIf=\"submitted && f.password.errors\" class=\"invalid-feedback\">\r\n                        <div *ngIf=\"f.password.errors.required\">Senha é obrigatória</div>\r\n                    </div>\r\n                </div>\r\n                <button [disabled]=\"loading\" class=\"btn btn-primary\">\r\n                    <span *ngIf=\"loading\" class=\"spinner-border spinner-border-sm mr-1\"></span>\r\n                    Login\r\n                </button>\r\n                <div *ngIf=\"error\" class=\"alert alert-danger mt-3 mb-0\">{{error.message}}</div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n</div>");
 
 /***/ }),
 
@@ -629,10 +629,8 @@ var AuthGuard = /** @class */ (function () {
     AuthGuard.prototype.canActivate = function (route, state) {
         var currentUser = this.authenticationService.currentUserValue;
         if (currentUser) {
-            // logged in so return true
             return true;
         }
-        // not logged in so redirect to login page with the return url
         this.router.navigate(['login'], { queryParams: { returnUrl: state.url } });
         return false;
     };
@@ -679,10 +677,9 @@ var FakeBackendInterceptor = /** @class */ (function () {
     }
     FakeBackendInterceptor.prototype.intercept = function (request, next) {
         var url = request.url, method = request.method, headers = request.headers, body = request.body;
-        // wrap in delayed observable to simulate server api call
         return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(null)
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["mergeMap"])(handleRoute))
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["materialize"])()) // call materialize and dematerialize to ensure delay even if an error is thrown (https://github.com/Reactive-Extensions/RxJS/issues/648)
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["materialize"])())
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["delay"])(500))
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["dematerialize"])());
         function handleRoute() {
@@ -692,11 +689,9 @@ var FakeBackendInterceptor = /** @class */ (function () {
                 case url.endsWith('/users') && method === 'GET':
                     return getUsers();
                 default:
-                    // pass through any requests not handled above
                     return next.handle(request);
             }
         }
-        // route functions
         function authenticate() {
             var username = body.username, password = body.password;
             var user = users.find(function (x) { return x.username === username && x.password === password; });
@@ -737,7 +732,6 @@ var FakeBackendInterceptor = /** @class */ (function () {
 }());
 
 var fakeBackendProvider = {
-    // use fake backend in place of Http service for backend-less development
     provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HTTP_INTERCEPTORS"],
     useClass: FakeBackendInterceptor,
     multi: true
@@ -785,7 +779,6 @@ var AuthenticationService = /** @class */ (function () {
         var _this = this;
         return this.http.post(_environments_environment__WEBPACK_IMPORTED_MODULE_5__["environment"].apiUrl + "/users/authenticate", { username: username, password: password })
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (user) {
-            // store user details and jwt token in local storage to keep user logged in between page refreshes
             localStorage.setItem('currentUser', JSON.stringify(user));
             _this.currentUserSubject.next(user);
             return user;
